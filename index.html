@@ -4,97 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Agro forte, futuro sustentável</title>
+    <meta
+        name="description"
+        content="Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente."
+    >
 
-    <style>
-        body{
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <title>Agro Forte, Futuro Sustentável</title>
 
-        header{
-            background-color: #2e7d32;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-
-        nav{
-            background-color: #1b5e20;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a{
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-weight: bold;
-        }
-
-        section{
-            padding: 30px;
-        }
-
-        .banner{
-            background-color: #c8e6c9;
-            padding: 40px;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        footer{
-            background-color: #2e7d32;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="cabecalho">
+        <nav class="navegacao container" aria-label="Navegação principal">
+            <a class="logo" href="#inicio">Agro<span>Forte</span></a>
 
-    <header>
-        <h1>Agro forte, futuro sustentável</h1>
-        <p>Equilíbrio entre produção e meio ambiente</p>
+            <button
+                class="botao-menu"
+                id="botao-menu"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#equilibrio">Equilíbrio</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#futuro">Futuro</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Sustentabilidade</a>
-        <a href="#">Tecnologia</a>
-        <a href="#">Contato</a>
-    </nav>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-conteudo container">
+                <div class="hero-texto">
+                    <p class="subtitulo">AGRINHO 2026</p>
 
-    <section>
-        <div class="banner">
-            <h2>Bem-vindo ao projeto AGRINHO 2026</h2>
+                    <h1>
+                        Agro forte,
+                        <span>futuro sustentável.</span>
+                    </h1>
+
+                    <p class="hero-descricao">
+                        Produzir alimentos e preservar a natureza não são objetivos
+                        opostos. Com conhecimento, tecnologia e responsabilidade,
+                        podemos construir um campo produtivo e sustentável.
+                    </p>
+
+                    <a class="botao" href="#equilibrio">
+                        Descubra como
+                    </a>
+                </div>
+
+                <div class="hero-imagem">
+                    <img
+                        src="assets/agro-sustentavel.jpg"
+                        alt="Campo agrícola produtivo cercado por áreas de preservação ambiental"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="equilibrio">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="subtitulo">O desafio</p>
+                    <h2>Produção e preservação podem caminhar juntas</h2>
+                    <p>
+                        O desenvolvimento do campo precisa considerar tanto a
+                        produção de alimentos quanto a conservação dos recursos
+                        naturais para as próximas gerações.
+                    </p>
+                </div>
+
+                <div class="cartoes">
+                    <article class="cartao">
+                        <div class="icone">🌱</div>
+                        <h3>Preservar</h3>
+                        <p>
+                            Proteger o solo, a água, as florestas e a biodiversidade
+                            fortalece o equilíbrio dos ecossistemas.
+                        </p>
+                    </article>
+
+                    <article class="cartao destaque">
+                        <div class="icone">🌾</div>
+                        <h3>Produzir</h3>
+                        <p>
+                            Uma agricultura eficiente utiliza conhecimento e boas
+                            práticas para produzir mais com responsabilidade.
+                        </p>
+                    </article>
+
+                    <article class="cartao">
+                        <div class="icone">♻️</div>
+                        <h3>Transformar</h3>
+                        <p>
+                            A sustentabilidade transforma desafios ambientais em
+                            oportunidades para um futuro melhor.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-verde" id="solucoes">
+            <div class="container conteudo-duplo">
+                <div class="imagem-secao">
+                    <img
+                        src="assets/producao-tecnologia.jpg"
+                        alt="Agricultura moderna utilizando tecnologia para produção sustentável"
+                    >
+                </div>
+
+                <div class="texto-secao">
+                    <p class="subtitulo">Caminhos para o futuro</p>
+
+                    <h2>Tecnologia a favor da sustentabilidade</h2>
+
+                    <p>
+                        A agricultura moderna pode utilizar tecnologia para
+                        racionalizar recursos, reduzir desperdícios e melhorar
+                        o planejamento das atividades no campo.
+                    </p>
+
+                    <ul class="lista-beneficios">
+                        <li>Uso consciente da água</li>
+                        <li>Conservação e recuperação do solo</li>
+                        <li>Redução de desperdícios</li>
+                        <li>Preservação da biodiversidade</li>
+                        <li>Uso de tecnologias de precisão</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="futuro">
+            <div class="container chamada">
+                <p class="subtitulo">Nossa responsabilidade</p>
+
+                <h2>
+                    O futuro do agro começa com escolhas sustentáveis hoje.
+                </h2>
+
+                <p>
+                    Quando produção, inovação e conservação trabalham juntas,
+                    o campo se torna mais forte, resiliente e preparado para
+                    as próximas gerações.
+                </p>
+
+                <button class="botao botao-secundario" id="botao-mensagem">
+                    Ver mensagem
+                </button>
+
+                <p
+                    class="mensagem"
+                    id="mensagem"
+                    aria-live="polite"
+                ></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>
+                © <span id="ano"></span> Agro Forte, Futuro Sustentável.
+            </p>
 
             <p>
-                Este site apresenta ideias e práticas para fortalecer
-                o agronegócio de forma sustentável, promovendo
-                o cuidado com o meio ambiente e o desenvolvimento
-                da sociedade.
+                Projeto desenvolvido para o Agrinho 2026.
             </p>
         </div>
-    </section>
-
-    <section>
-        <h2>Produção sustentável</h2>
-
-        <p>
-            A agricultura sustentável busca aumentar a produção
-            de alimentos utilizando recursos naturais de maneira
-            consciente e responsável.
-        </p>
-    </section>
-
-    <footer>
-        <p>Projeto AGRINHO 2026 - Desenvolvido em HTML</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
